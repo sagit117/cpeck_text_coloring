@@ -13,6 +13,13 @@ pub enum Color {
     Clear
 }
 
+/// Функция возвращает unicode escape последовательно цвета текста.
+///
+/// # Examples
+/// ```
+/// let red = cpeck_text_coloring::unicode_escape_sequences_text(cpeck_text_coloring::Color::Red);
+/// assert_eq!(red, "\u{001b}[31m");
+/// ```
 pub fn unicode_escape_sequences_text(color: Color) -> String {
     match color {
         Color::Black => "\u{001b}[30m".to_owned(),
@@ -27,6 +34,13 @@ pub fn unicode_escape_sequences_text(color: Color) -> String {
     }
 }
 
+/// Функция возвращает unicode escape последовательно цвета фона текста.
+///
+/// # Examples
+/// ```
+/// let red = cpeck_text_coloring::unicode_escape_sequences_backgraund(cpeck_text_coloring::Color::Red);
+/// assert_eq!(red, "\u{001b}[41m");
+/// ```
 pub fn unicode_escape_sequences_backgraund(color: Color) -> String {
     match color {
         Color::Black => "\u{001b}[40m".to_owned(),
