@@ -1,6 +1,7 @@
 #![crate_type = "lib"]
 #![crate_name = "cpeck_text_coloring"]
 
+/// Перечисление цветов.
 pub enum Color {
     Black,
     Red,
