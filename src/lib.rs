@@ -1,5 +1,5 @@
 #![crate_type = "lib"]
-#![crate_name = "cpeck_text_coloring"]
+#![crate_name = "speck_text_coloring"]
 
 /// Перечисление цветов.
 pub enum Color {

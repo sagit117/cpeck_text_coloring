@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "cpeck_text_coloring"
+name = "speck_text_coloring"
 version = "0.1.0"
